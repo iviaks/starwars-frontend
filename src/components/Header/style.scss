@@ -1,0 +1,46 @@
+.Header {
+  color: #f8f7f8;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 10px;
+  background-image: linear-gradient(rgba(#1dc832, 0.2), rgba(#1dc832, 0));
+  // background-image: linear-gradient(rgba(#1dc832, 0.3), rgba(#1dc832, 0.1));
+  // box-shadow: 0 -50px 50px 50px rgba(#1dc832, 0.1);
+
+  &-sorting {
+    display: flex;
+    flex: 1;
+
+    &-button {
+      font-family: 'Oswald', sans-serif;
+      font-weight: 200;
+      text-transform: uppercase;
+      color: #3a5a5f;
+      font-size: 1.3em;
+      cursor: pointer;
+
+      &.selected {
+        color: #f8f7f8;
+      }
+
+      &:not(:last-child) {
+        margin-right: 10px;
+      }
+    }
+  }
+
+  &-logo {
+    height: 50px;
+    width: 300px;
+    background-image: url('~logo.svg');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  &-characters {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+  }
+}
